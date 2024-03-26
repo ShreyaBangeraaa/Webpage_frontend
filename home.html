@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1; /* Allows the search bar to take up the remaining space */
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 15px;
+            margin-left: 10px;
+            width: 200px; /* Adjust the width as needed */
+        }
+
+        nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .bg-image-container.left-column {
+        background-image: url('images.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: left;
+        padding: 160px 50px; /* Adjusted padding with 20px left padding for the gap */
+        margin-bottom: 0;
+}
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-column {
+            flex: 1;
+        }
+
+        .right-column {
+            flex: 1;
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        h3 {
+            color: #ffc107; /* Yellowish color */
+        }
+
+        .know-more-btn {
+        background-color: #474746;
+        color: #f0efef;
+        padding: 8px 24px; /* Adjusted padding for increased width */
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+}
+
+.horizontal-line {
+            border-top: 1px solid white;
+            margin: 20px 0;
+        }
+
+        .more-news {
+            text-align: center;
+            color: #ffc107;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: medium;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .thumbnail {
+            width: 23%; /* Adjust the width as needed */
+            margin-bottom: 20px;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+
+        .thumbnail-content {
+            padding: 10px;
+        }
+
+        .thumbnail-content h4 {
+            color: #333;
+        }
+
+        .read-more-btn {
+            background-color: #e4e2db;
+            color: #333;
+            padding: 8px 5px;
+            text-decoration: none;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-column {
+            flex: 1;
+        }
+
+        .rightt-column {
+            flex: 1;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffc107; /* Yellowish color */
+        }
+
+
+        .email-icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        img {
+            object-fit: cover; /* Ensures the image covers the entire container */
+            max-width: 100%;
+            height: 100%;
+        }
+
+
+        
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #ffc107; /* Yellowish color */
+        }
+
+        .subscribe-text {
+            margin-bottom: 10px;
+        }
+
+        .horizontal-line {
+            border-top: 1px solid white;
+            margin: 20px 0;
+        }
+
+        .checkbox-label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        img {
+            object-fit: cover; /* Ensures the image covers the entire container */
+            max-width: 100%;
+            height: 100%;
+        }
+        .btn-common {
+            padding: 8px 24px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .subscribe-btn {
+    background-color: #5f5f5e;
+    color: #ededed;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid white; /* Updated to have a white border */
+    border-radius: 5px;
+}
+        
+
+.subscribe-btn:hover {
+    background-color: #333;
+}
+
+
+        .email-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .email-icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        .right-column img {
+            width: 150%;
+            height: auto;
+        }
+
+        .input-group-text {
+    border: none;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.border-yellow {
+    border: 1px solid #ffc107;
+}
+
+.text-yellow {
+    color: #ffc107;
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark text-white p-3 d-flex align-items-center">
+        <div>
+            
+            <h1 class="m-0">Dechon</h1>
+        </div>
+        <!-- <div class="d-flex align-items-center ml-auto">
+            <input type="text" class="form-control mr-2" placeholder="Search...">
+        </div> -->
+        <div class="d-flex align-items-center ml-auto search-container">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search...">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-black border-yellow">
+                        <i class="fas fa-search text-yellow"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+
+        <nav class="ml-auto">
+            <ul class="list-inline m-0">
+                <li class="list-inline-item"><a href="#" class="text-white">Home</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Who we are</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Insights</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Career</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bg-image-container left-column">
+        <h2><b></b>&nbsp;Stay Informed:Latest<br>&nbsp;News and Updates from<br>&nbsp;DCG group</b></h2>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="left-column">
+                    <h3>Discover What's Happening:<br>News and<br>Insights at DCG Group</h3>
+                </div>
+                <div class="right-column">
+                    <p>December 22, 2023</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo in felis consectetur imperdiet. Nulla facilisi. Vivamus eu arcu vitae ligula vestibulum hendrerit.</p>
+                    <a href="#" class="know-more-btn">Know more</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="horizontal-line"></div>
+
+    <div class="more-news">
+        More News
+    </div>
+
+    <div class="thumbnail-container">
+        <!-- Thumbnail 1 -->
+        <div class="thumbnail">
+            <img src="photo1.jpg" alt="Thumbnail 1">
+            <div class="thumbnail-content">
+                
+                <p>January 1, 2024</p>
+                <p>Random text for the news content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-outline-secondary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Thumbnail 2 -->
+        <div class="thumbnail">
+            <img src="photo1.jpg" alt="Thumbnail 2">
+            <div class="thumbnail-content">
+                
+                <p>January 2, 2024</p>
+                <p>Random text for the news content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-outline-secondary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Thumbnail 3 -->
+        <div class="thumbnail">
+            <img src="photo1.jpg" alt="Thumbnail 3">
+            <div class="thumbnail-content">
+                
+                <p>January 3, 2024</p>
+                <p>Random text for the news content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-outline-secondary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Thumbnail 4 -->
+        <div class="thumbnail">
+            <img src="photo1.jpg" alt="Thumbnail 4">
+            <div class="thumbnail-content">
+                
+                <p>January 4, 2024</p>
+                <p>Random text for the news content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-outline-secondary">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="#" class="btn btn-outline-secondary">Load More.....</a>
+    </div>
+
+    <br><br>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="left-column">
+                    <h1>Stay connected</h1>
+                    <p class="subscribe-text">Subscribe now for the latest updates</p>
+                    <div class="email-container d-flex align-items-center">
+                            <i class="fas fa-envelope email-icon mr-2"></i>
+                            <p class="mb-0">Email</p>
+                            <button class="btn btn-common btn-sm subscribe-btn">Subscribe</button>
+                        </div>
+                            
+                    <div class="horizontal-line"></div>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="subscribe" value="1"> I consent to processing of my personal data shared above for the purpose of receiving newsetter and other consent from DCG
+                    </label>
+                    <!-- Add more checkboxes as needed -->
+                </div>
+
+                <div class="rightt-column">
+                    <img src="images.jpg" alt="Stay Connected Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
